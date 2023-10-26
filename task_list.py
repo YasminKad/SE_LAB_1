@@ -4,7 +4,7 @@ class TaskList:
         self.categories = {}
 
     def add_task(self, task):
-        return 0
+        self.tasks.append(task)
 
     def remove_task(self, task):
         return 0
