@@ -1,3 +1,6 @@
+from category import Category
+
+
 class TaskList:
     def __init__(self):
         self.tasks = []
@@ -23,4 +26,10 @@ class TaskList:
             self.categories[name] = Category(name)
 
     def show_categories(self):
-        return 0
+        if not self.categories:
+            print("No categories.")
+            return
+
+        print("Categories:")
+        for name in self.categories:
+            print(name)
