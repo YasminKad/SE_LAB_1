@@ -7,7 +7,8 @@ class TaskList:
         self.tasks.append(task)
 
     def remove_task(self, task):
-        return 0
+        if task in self.tasks:
+            self.tasks.remove(task)
 
     def show_tasks(self):
         return 0
