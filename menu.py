@@ -6,7 +6,14 @@ class Menu:
         self.task_list = TaskList()
 
     def display_main_menu(self):
-        return 0
+        print("Options:")
+        print("1. Add a task")
+        print("2. Remove a task")
+        print("3. Mark a task as completed")
+        print("4. Show tasks")
+        print("5. Add a category")
+        print("6. Show categories")
+        print("7. Quit")
 
     def main_menu(self):
         return 0
