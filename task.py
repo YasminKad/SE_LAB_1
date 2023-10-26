@@ -1,3 +1,5 @@
+from colorama import Fore, Style
+
 class Task:
     def __init__(self, description, category):
         self.description = description
