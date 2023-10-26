@@ -5,6 +5,7 @@ class Task:
         self.category = category
 
     def toggle_completed(self):
-        return 0
+        self.completed = not self.completed
     def __str__(self):
-        return 0
+        status = f"{Fore.GREEN}✓{Style.RESET_ALL}" if self.completed else f"{Fore.RED}✗{Style.RESET_ALL}"
+        return f"{status} {self.description} ({self.category.name})"
