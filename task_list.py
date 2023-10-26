@@ -11,7 +11,12 @@ class TaskList:
             self.tasks.remove(task)
 
     def show_tasks(self):
-        return 0
+        if not self.tasks:
+            print("No tasks.")
+            return
+
+        for i, task in enumerate(self.tasks, start=1):
+            print(f"{i}. {task}")
 
     def add_category(self, name):
         return 0
