@@ -19,7 +19,8 @@ class TaskList:
             print(f"{i}. {task}")
 
     def add_category(self, name):
-        return 0
+        if name not in self.categories:
+            self.categories[name] = Category(name)
 
     def show_categories(self):
         return 0
