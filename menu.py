@@ -46,7 +46,18 @@ class Menu:
         self.task_list.add_task(task)
 
     def remove_task(self):
-        return 0
+        if not self.task_list.tasks:
+            print("No tasks to remove.")
+            return
+
+        print("Tasks:")
+        self.task_list.show_tasks()
+        task_index = int(input("Enter the task number to remove: ")) - 1
+        if 0 <= task_index < len(self.task_list.tasks):
+            self.task_list.remove_task(self.task_list.tasks[task_index])
+        else:
+            print("Invalid task number.")
+
 
     def mark_task_completed(self):
         return 0
