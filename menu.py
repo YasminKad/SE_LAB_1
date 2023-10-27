@@ -37,7 +37,7 @@ class Menu:
                 print("Invalid choice. Please choose a valid option.")
 
     def add_task(self):
-        return 0
+        self.tasks.append(task)
 
     def remove_task(self):
         return 0
