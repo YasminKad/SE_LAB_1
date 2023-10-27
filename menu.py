@@ -37,7 +37,13 @@ class Menu:
                 print("Invalid choice. Please choose a valid option.")
 
     def add_task(self):
-        return 0
+        task_description = input("Enter task description: ")
+        category_name = input("Enter category name: ")
+        if category_name not in self.task_list.categories:
+            print("Category does not exist. Creating a new category.")
+            self.task_list.add_category(category_name)
+        task = Task(task_description, self.task_list.categories[category_name])
+        self.task_list.add_task(task)
 
     def remove_task(self):
         return 0
