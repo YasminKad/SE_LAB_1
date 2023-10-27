@@ -76,4 +76,5 @@ class Menu:
             print("Invalid task number.")
 
     def add_category(self):
-        return 0
+        category_name = input("Enter category name: ")
+        self.task_list.add_category(category_name)
