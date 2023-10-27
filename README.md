@@ -1,7 +1,27 @@
 # SE_LAB_1
 Working with Github: Simple to do list project
 
+In this project we aimed to build a simple to do list. We have designed our project with an OO aproach and so defined the classes Task, Task_List, Category and Menu coupled with a main file to handle all the processes and functionalities of the project. 
+
+To implement the mentioned to do list project, we have done the following tasks:
+
+- Created this git repository to be able to develop the porject in our team
+
+- Created a sample gitignore file for the unnecessary files
+
+- Created separate branches per each class designed (feature/classname-class) to be able to develop each object and feature async and merge them to the main branch at the final stage.
+  Our existing branches: feature/category-class, feature/task-class, feature/task_list-class, feature/menu-class, main 
+
+- Developed and implemented each class separately through its unique branch over time. This implementation has been step by step. Each class function has been implemented in a separte commit to be able to follow the atomic commit practice with a proper commit message (writen due to the best practices of commit message submission).
+
+- Through the development process, there where some conflicts in different development parts since classes where developed asynchronously and through different branches by different team members; We resolved the occurred conflicts when merging the branches in the files that had overlapped functionalities or conflicts. 
+
+- At the final stage we merged the child branches with the main branch using pull requests (according to the estricted main branch merging access).
+
+- You could use the built to do list by running the main.py file in the main branch :)
+
 Questions:
+
 1)The .git folder contains all the information needed to track the codebase changes. In other words, the project's
 version control (commits, remote repo address etc.) is handled using this file.
 For .git to be built, a new repo should be created and to the git "git init" command is the proper way to build a new repo.
