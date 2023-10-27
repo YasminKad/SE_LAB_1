@@ -60,7 +60,20 @@ class Menu:
 
 
     def mark_task_completed(self):
-        return 0
+        if not self.task_list.tasks:
+            print("No tasks to mark as completed.")
+            return
+
+        print("Tasks:")
+        self.task_list.show_tasks()
+        task_index = int(input("Enter the task number to mark as completed: ")) - 1
+        if 0 <= task_index < len(self.task_list.tasks):
+            task = self.task_list.tasks[task_index]
+            task.toggle_completed()
+            status = "completed" if task.completed else "uncompleted"
+            print(f"{Fore.GREEN}Task marked as {status}.{Style.RESET_ALL}")
+        else:
+            print("Invalid task number.")
 
     def add_category(self):
         return 0
