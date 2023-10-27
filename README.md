@@ -2,6 +2,7 @@
 Working with Github: Simple to do list project
 
 Questions:
+
 1)The .git folder contains all the information needed to track the codebase changes. In other words, the project's
 version control (commits, remote repo address etc.) is handled using this file.
 For .git to be built, a new repo should be created and to the git "git init" command is the proper way to build a new repo.
