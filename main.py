@@ -1,2 +1,8 @@
+from colorama import init
+
+from menu import Menu
+
 if __name__ == "__main__":
-    print('Build To-Do-List Project')
+    init(autoreset=True)
+    menu = Menu()
+    menu.main_menu()
