@@ -40,7 +40,8 @@ class Menu:
         self.tasks.append(task)
 
     def remove_task(self):
-        return 0
+        if task in self.tasks:
+            self.tasks.remove(task)
 
     def mark_task_completed(self):
         return 0
