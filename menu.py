@@ -1,3 +1,6 @@
+from colorama import Fore, Style
+
+from task import Task
 from task_list import TaskList
 
 
@@ -57,7 +60,6 @@ class Menu:
             self.task_list.remove_task(self.task_list.tasks[task_index])
         else:
             print("Invalid task number.")
-
 
     def mark_task_completed(self):
         if not self.task_list.tasks:
